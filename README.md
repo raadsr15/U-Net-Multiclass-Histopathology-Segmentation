@@ -54,4 +54,14 @@ After 100 epochs of training, the U-Net model achieved the following validation 
 
 *(See training logs for full epoch-by-epoch metrics.)*
 
+## Visualizing Results
+
+
+![image](https://github.com/user-attachments/assets/57bc7f73-71d0-4720-9f61-a4f9f88b7e81)
+
+
+![image](https://github.com/user-attachments/assets/08bf5541-74d7-4b6c-9a80-90363f9d2f22)
+
+
+
   
