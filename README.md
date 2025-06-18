@@ -29,4 +29,29 @@ This project uses images from the [2018 Kaggle Data Science Bowl](https://www.ka
 - **Visualization:** Display input images, ground truth masks, and predicted segmentations for qualitative assessment.
 - **Inference:** Apply the trained model to new/unseen images for segmentation.
 
+## Results
+
+After 100 epochs of training, the U-Net model achieved the following validation scores (averaged over the last epoch):
+
+- **Dice Coefficient (background, nucleus, border):**
+  - [0.9703754  0.86121219 0.37682778]
+
+- **IoU Score (background, nucleus, border):**
+  - [0.94507935 0.7692299  0.27852891]
+
+### Score Interpretation
+
+| Dice Coefficient | IoU (Jaccard) | Interpretation           |
+|------------------|--------------|--------------------------|
+| 0.90 – 1.00      | 0.81 – 1.00  | Excellent (near-perfect) |
+| 0.80 – 0.90      | 0.65 – 0.81  | Very Good                |
+| 0.70 – 0.80      | 0.50 – 0.65  | Good                     |
+| 0.60 – 0.70      | 0.36 – 0.50  | Fair/Usable              |
+| < 0.60           | < 0.36       | Poor                     |
+
+- **Background and nucleus classes achieved strong segmentation performance.**
+- **Border class segmentation remains challenging, with lower Dice/IoU.**
+
+*(See training logs for full epoch-by-epoch metrics.)*
+
   
