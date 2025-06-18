@@ -1,2 +1,20 @@
 # U-Net-Multiclass-Histopathology-Segmentation
-PyTorch implementation of U-Net for multiclass segmentation of histopathology images. Includes mask color-to-class conversion, full training pipeline, per-class Dice/IoU metrics, and inference-ready code for new image prediction.
+
+This repository contains a practical implementation of U-Net for multiclass segmentation of histopathology images in PyTorch. The code demonstrates the complete workflow for training a segmentation model to distinguish between background, nuclei, and border regions in microscopy images. Mask preprocessing includes conversion of RGB-encoded annotations to integer class maps, enabling multiclass semantic segmentation rather than binary classification.
+
+All steps of the process are covered within a single Jupyter notebook, including dataset preparation, data augmentation, model definition, training and validation loops, evaluation with Dice and IoU metrics for each class, and visualization of results. The approach follows established methods in biomedical image segmentation and is built to be reproducible and straightforward to understand.
+
+The dataset used is the 2018 Kaggle Data Science Bowl collection, which provides diverse cell images and masks in a public research context. Dataset files themselves are not included in this repository; users are instructed on how to download and arrange the data for training and evaluation.
+
+## Dataset Description
+
+This project uses images from the [2018 Kaggle Data Science Bowl](https://www.kaggle.com/competitions/data-science-bowl-2018/data), a large-scale biomedical imaging challenge focused on cell nuclei segmentation. The dataset contains thousands of microscopy images of cell samples collected from a variety of organisms and imaging conditions, making it an excellent benchmark for developing and evaluating segmentation algorithms.
+
+### Key Features
+
+- **Input images:** Variable-size RGB microscopy images containing single or multiple nuclei.
+- **Annotation masks:** Each image is accompanied by a ground truth mask, where nuclei are labeled and encoded as separate objects. For this project, color-coded masks are converted to multiclass (background, nucleus, border) segmentation maps.
+- **Diversity:** The dataset includes images from different cell types, tissues, and imaging modalities, enhancing model robustness and generalizability.
+- **Use case:** Supports training, validation, and testing of semantic segmentation models in biomedical research.
+
+  
