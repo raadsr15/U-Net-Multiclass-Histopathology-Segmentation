@@ -18,3 +18,15 @@ This project uses images from the [2018 Kaggle Data Science Bowl](https://www.ka
 - **Use case:** Supports training, validation, and testing of semantic segmentation models in biomedical research.
 
   
+## Pipeline Overview
+
+- **Data Preparation:** Organize and preprocess raw microscopy images and RGB-encoded mask files.
+- **Mask Conversion:** Convert color-coded masks to integer class maps (background, nuclei, border).
+- **Dataset & Augmentation:** Build PyTorch datasets and apply basic augmentations for training.
+- **Model Definition:** Implement a U-Net architecture with three output channels for multiclass segmentation.
+- **Training Loop:** Train the model using CrossEntropyLoss and Adam optimizer, monitoring per-class Dice and IoU metrics.
+- **Validation & Evaluation:** Assess performance on a held-out validation set after each epoch.
+- **Visualization:** Display input images, ground truth masks, and predicted segmentations for qualitative assessment.
+- **Inference:** Apply the trained model to new/unseen images for segmentation.
+
+  
