@@ -1,3 +1,6 @@
+
+![Flux_Dev_A_cinematic_portrait_photograph_of_Futuristic_biomedi_2](https://github.com/user-attachments/assets/48a5c1ee-3f10-4100-a1ad-73131249128d)
+
 # U-Net-Multiclass-Histopathology-Segmentation
 
 This repository contains a practical implementation of U-Net for multiclass segmentation of histopathology images in PyTorch. The code demonstrates the complete workflow for training a segmentation model to distinguish between background, nuclei, and border regions in microscopy images. Mask preprocessing includes conversion of RGB-encoded annotations to integer class maps, enabling multiclass semantic segmentation rather than binary classification.
