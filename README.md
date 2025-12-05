@@ -1,5 +1,5 @@
 
-![Flux_Dev_A_cinematic_portrait_photograph_of_Futuristic_biomedi_2](https://github.com/user-attachments/assets/48a5c1ee-3f10-4100-a1ad-73131249128d)
+![Flux_Dev_A_cinematic_portrait_photograph_of_Futuristic_biomedi_3](https://github.com/user-attachments/assets/a0c0e3f9-b786-4a06-ae33-b6ea94431118)
 
 # U-Net-Multiclass-Histopathology-Segmentation
 
